@@ -109,3 +109,10 @@ $(document).ready(function() {
       }
     });
   }
+
+const menuIcon = document.querySelector(".menu_icon");
+const navbar = document.querySelector(".navbar");
+
+menuIcon.onclick = () => {
+    navbar.classList.toggle("active");
+};
