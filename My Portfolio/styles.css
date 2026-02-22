@@ -531,3 +531,49 @@ profile-photo .img{
 
 }
 
+/* Mobile Layout */
+@media only screen and (max-width:767px){
+
+  .container{
+    width:100%;
+    padding:0 15px;
+  }
+
+  .header{
+    position:relative;
+  }
+
+  .header .menu_icon{
+    display:block;
+    font-size:24px;
+  }
+
+  .header ul{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#202020;
+    flex-direction:column;
+    align-items:flex-start;   /* left side align */
+    display:none;
+    padding:20px;
+    gap:15px;   /* equal spacing between items */
+  }
+
+  .header ul.active{
+    display:flex;
+  }
+
+  .header ul li{
+    width:100%;
+    margin:0;
+  }
+
+  .header ul li a{
+    display:block;
+    width:100%;
+    padding:10px 0;
+    font-size:18px;
+  }
+}
